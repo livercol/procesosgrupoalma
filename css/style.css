@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family:Arial,sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+#contador-app {
+  height: 50%;
+  width: 300px;
+  position: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column;
+      flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 1em;
+  border-radius: 5px;
+}
+#display {
+  height: 150px;
+  width: 150px;
+  color: #333333;
+  margin: auto;
+  font-size: calc(150px / 1.5);
+  line-height: 150px;
+  border-radius: 5px;
+  border:1px solid #ccc;
+  background: #efefef;
+}
+.container {
+  padding: 1em;
+}
+#increment-button {
+  background:green;
+}
+#decrement-button {
+  background: #ffae23;
+}
+#reset-button {
+  background:red;
+}
+.button {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  z-index: 100;
+  margin: 0 5px;
+  overflow: hidden;
+  line-height: 50px;
+  font-size: 30px;
+  cursor: pointer;
+  color: #efefef;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 5px;
+  border: none;
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.button:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
